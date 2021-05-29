@@ -48,7 +48,7 @@ INSTALLED_APPS = (
 )
 
 
-ROOT_URLCONF = 'match_challenge.urls'
+ROOT_URLCONF = 'setup.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'match_challenge.wsgi.application'
+WSGI_APPLICATION = 'setup.wsgi.application'
 
 
 # Database

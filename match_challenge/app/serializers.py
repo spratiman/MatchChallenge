@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import Notice, Record, Match
+from .models import Notice, Record, Match
 
 
 class NoticeSerializer(serializers.ModelSerializer):
