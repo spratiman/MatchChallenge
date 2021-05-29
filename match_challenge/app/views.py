@@ -11,12 +11,14 @@ class NoticeViewSet(viewsets.ModelViewSet):
     queryset = Notice.objects.all()
     serializer_class = NoticeSerializer
     filter_backends = (DjangoFilterBackend, )
+    http_method_names = ['get', ]
 
 
 class RecordViewSet(viewsets.ModelViewSet):
     queryset = Record.objects.all()
     serializer_class = RecordSerializer
     filter_backends = (DjangoFilterBackend, )
+    http_method_names = ['post', 'delete']
 
     def create(self, request, *args, **kwargs):
         data = json.loads(request.body)
@@ -50,3 +52,5 @@ class MatchViewSet(viewsets.ModelViewSet):
     queryset = Match.objects.all()
     serializer_class = MatchSerializer
     filter_backends = (DjangoFilterBackend, )
+    filter_fields = ["type"]
+    http_method_names = ['get', ]
