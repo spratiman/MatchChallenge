@@ -1,4 +1,4 @@
-from app.models import Record, Notice, Match
+from app.models import Record, Notice
 from rest_framework.test import APITestCase
 from rest_framework import status
 
