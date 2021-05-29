@@ -6,7 +6,7 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 
 router.register("notices", NoticeViewSet)
-router.register("record", RecordViewSet)
+router.register("records", RecordViewSet)
 router.register("matches", MatchViewSet)
 
 
